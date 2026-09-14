@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-warm-white text-ink-navy font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display uppercase tracking-wide;
+  }
+}
+
+@layer components {
+  /* Signature structural device: a tick-mark "measuring tape" rule used to
+     divide sections, echoing the shop's own tools instead of a generic line. */
+  .tick-divider {
+    @apply h-[6px] w-full bg-tick-ruler;
+  }
+
+  .btn-primary {
+    @apply bg-safety-amber text-ink-navy font-display font-bold uppercase tracking-wide
+           px-6 py-3 rounded-sm hover:bg-ink-navy hover:text-safety-amber transition-colors
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-navy;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-ink-navy text-ink-navy font-display font-bold uppercase tracking-wide
+           px-6 py-3 rounded-sm hover:bg-ink-navy hover:text-warm-white transition-colors
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-navy;
+  }
+
+  .input {
+    @apply w-full rounded-sm border border-gray-300 px-3 py-2 font-body text-sm text-ink-navy
+           focus:border-ink-navy focus:outline-none focus-visible:ring-1 focus-visible:ring-ink-navy;
+  }
+
+  /* Stock gauge: a small fill bar that encodes real stock-level data,
+     reused on product cards and the admin inventory view. */
+  .stock-gauge {
+    @apply h-1.5 w-full bg-gray-200 rounded-full overflow-hidden;
+  }
+  .stock-gauge-fill {
+    @apply h-full rounded-full transition-all;
+  }
+}
