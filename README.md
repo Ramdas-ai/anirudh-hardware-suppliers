@@ -4,6 +4,10 @@ Full-stack MERN e-commerce site for Anirudh Hardware and Suppliers (Nepal).
 See `anirudh-hardware-architecture.md` for the full architecture, schema,
 API list, and phase plan this project follows.
 
+## 🌐 Live Website
+
+https://anirudh-hardware-suppliers-cuy2.vercel.app
+
 ## Phase 1 — Project Architecture + Frontend Design (this delivery)
 
 What's included:
